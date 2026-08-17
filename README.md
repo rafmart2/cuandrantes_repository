@@ -7,8 +7,7 @@ editarlo a mano, exportarlo a PDF y enviarlo por email a cada trabajador.
 ## Acceso
 
 - **Registro**: cualquiera puede crear una cuenta (email + contraseña), pero
-  queda pendiente de validación (`status = pending`) hasta que el
-  **super_admin** la aprueba manualmente desde Supabase.
+  queda pendiente de validación hasta que el **super_admin** la aprueba manualmente desde Supabase.
 - **Login**: una vez aprobada la cuenta, se accede con normalidad.
 - Solo se puede ver y modificar la información introducida por la propia
   cuenta (trabajadores, puestos y cuadrantes son privados por administrador).
