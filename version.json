@@ -1,14 +1,14 @@
 {
   "app_name": "Generador Cuadrantes",
-  "version": "0.0.2",
-  "build_number": 2,
-  "full_version": "0.0.2+2",
-  "tag": "v0.0.2",
-  "apk_name": "Generador Cuadrantes_v0.0.2.apk",
-  "windows_name": "Generador Cuadrantes_v0.0.2_Windows.zip",
-  "linux_name": "Generador Cuadrantes_v0.0.2_Linux.zip",
-  "apk_url": "https://github.com/rafmart2/cuandrantes_repository/releases/download/v0.0.2/Generador Cuadrantes_v0.0.2.apk",
-  "windows_url": "https://github.com/rafmart2/cuandrantes_repository/releases/download/v0.0.2/Generador Cuadrantes_v0.0.2_Windows.zip",
-  "linux_url": "https://github.com/rafmart2/cuandrantes_repository/releases/download/v0.0.2/Generador Cuadrantes_v0.0.2_Linux.zip",
-  "release_url": "https://github.com/rafmart2/cuandrantes_repository/releases/tag/v0.0.2"
+  "version": "0.0.3",
+  "build_number": 3,
+  "full_version": "0.0.3+3",
+  "tag": "v0.0.3",
+  "apk_name": "Generador Cuadrantes_v0.0.3.apk",
+  "windows_name": "Generador Cuadrantes_v0.0.3_Windows.zip",
+  "linux_name": "Generador Cuadrantes_v0.0.3_Linux.zip",
+  "apk_url": "https://github.com/rafmart2/cuandrantes_repository/releases/download/v0.0.3/Generador Cuadrantes_v0.0.3.apk",
+  "windows_url": "https://github.com/rafmart2/cuandrantes_repository/releases/download/v0.0.3/Generador Cuadrantes_v0.0.3_Windows.zip",
+  "linux_url": "https://github.com/rafmart2/cuandrantes_repository/releases/download/v0.0.3/Generador Cuadrantes_v0.0.3_Linux.zip",
+  "release_url": "https://github.com/rafmart2/cuandrantes_repository/releases/tag/v0.0.3"
 }

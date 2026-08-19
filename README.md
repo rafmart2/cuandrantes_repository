@@ -7,10 +7,11 @@ editarlo a mano, exportarlo a PDF y enviarlo por email a cada trabajador.
 ## Acceso
 
 - **Registro**: cualquiera puede crear una cuenta (email + contraseña), pero
-  queda pendiente de validación hasta que el **super_admin** la aprueba manualmente desde Supabase.
+  queda pendiente de validación hasta que sea aprobada manualmente.
 - **Login**: una vez aprobada la cuenta, se accede con normalidad.
 - Solo se puede ver y modificar la información introducida por la propia
   cuenta (trabajadores, puestos y cuadrantes son privados por administrador).
+- **Recuperar Contraseña**: se añadio la opcion por si se olvida.  
 
 ## ¿Para qué sirve?
 
@@ -91,27 +92,14 @@ También incluye una pantalla de acceso (login y registro de cuenta).
 - Las vacaciones se contabilizan a razón de **5,22 horas por día** y se consideran horas normales/diurnas incluso cuando coinciden con un día festivo.
 - El panel de inicio reconstruye las alertas de los cuadrantes guardados para que sigan visibles aunque el cuadrante no se haya generado durante la sesión actual.
 - **Formato Profesional de PDFs**: Los documentos se generan fijos en formato apaisado. La columna con el nombre de los contratos y servicios se autoajusta de forma inteligente al tamaño del texto largo para que los nombres de los puestos quepan siempre en una sola línea sin cortarse.
-- **Descargas Limpias y Correctas**: Al guardar los archivos en el almacenamiento del teléfono o el ordenador, el sistema propone automáticamente un nombre descriptivo ordenado por el servicio, el mes y el año (ej: `Cuadrante_RENFE_LOTE_6_8_2026.pdf`) garantizando que se descargue siempre como un documento PDF listo para abrir con un toque.
+- **Descargas Limpias y Correctas**: Al guardar los archivos en el almacenamiento del teléfono o el ordenador, el sistema propone automáticamente un nombre descriptivo ordenado por el servicio, el mes y el año (ej: `Cuadrante_Servicio_6_8_2035.pdf`) garantizando que se descargue siempre como un documento PDF listo para abrir con un toque.
 - **Sincronización de Datos**: El motor interno corrige automáticamente cualquier desfase de horas al leer la base de datos, asegurando que los turnos y los horarios de entrada y salida coincidan milimétricamente en el día exacto del mes tanto en las tablas de la aplicación como en las hojas impresas.
 
 ## Sistema de actualización
 
-Se ha preparado un sistema de actualización automática de la aplicación basado en la versión definida en `pubspec.yaml`.
+Se ha preparado un sistema de actualización automática de la aplicación.
 
 - La aplicación obtiene su versión instalada automáticamente.
-- `UpdateService` consulta `version.json` en el repositorio público.
 - Se comparan la versión y el número de build instalados con la versión publicada.
 - Si existe una versión nueva, la aplicación puede mostrar un aviso al usuario.
-- Se ha preparado el instalador para **Android** y **Windows**.
-- En Android se utiliza `FileProvider` para compartir de forma segura el APK descargado con el instalador.
-- La integración Android utiliza un `MethodChannel` nativo (`app.updater/install`) para iniciar la instalación del APK.
-- El sistema de publicación utiliza automáticamente el nombre y la versión de `pubspec.yaml`.
-
-## Publicación multiplataforma
-
-El proyecto utiliza GitHub Actions para automatizar la publicación de las versiones.
-
-La versión se obtiene directamente de:
-
-```yaml
-version: 0.0.2+2
+- Se ha preparado el instalador para **Android**, **Windows** y **Linux**.
